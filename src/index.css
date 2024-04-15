@@ -21,9 +21,12 @@ input {
 .App {
   width: 100%;
   min-height: 100vh;
-  background-color: #1e3b46;
+  background-color: #e2e8f0;
   color: #568ea6;
   padding-top: 60px;
+  background-image: url("./img/pattern-2.svg");
+  background-position: center;
+  background-blend-mode: overlay;
 }
 
 /* navbar */
@@ -32,8 +35,8 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #467183;
-  color: #f1d1b5;
+  background-color: rgba(226, 232, 240, 0.737);
+  color: #111827;
   height: 60px;
   position: fixed;
   left: 0;
@@ -54,9 +57,9 @@ input {
   border-radius: 5px;
   width: 100px;
   height: 40px;
-  color: #242443;
-  border: 1px solid #62a2bd;
-  background-color: #62a2bd;
+  color: #f9fafb;
+  border: 1px solid #94a3b8;
+  background-color: #94a3b8;
   font-weight: 600;
 }
 
@@ -79,11 +82,10 @@ input {
 .chat-bubble {
   border-radius: 20px 20px 20px 0;
   padding: 15px;
-  background-color: #568ea6;
-  color: #1c2c4c;
+  background-color: #d1d5db;
+  color: #6b7280;
   width: max-content;
   max-width: calc(100% - 50px);
-  box-shadow: -2px 2px 1px 1px #4c768d;
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
@@ -91,20 +93,26 @@ input {
 .chat-bubble.right {
   margin-left: auto;
   border-radius: 20px 20px 0 20px;
-  background-color: #f0b7a4;
-  box-shadow: -2px 2px 1px 1px #9e796c;
+  background-color: #334155;
+  color: #e2e8f0;
 }
+
+.chat-bubble.right .user-name {
+  color: #e2e8f0;
+}
+
 .chat-bubble__left {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   margin-right: 10px;
 }
+
 .user-name {
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 0.9rem;
-  color: #1c2c4c;
+  color: 6b7280;
 }
 .user-message {
   word-break: break-all;
@@ -120,7 +128,7 @@ input {
   bottom: 0px;
   width: 100%;
   padding: 20px 30px;
-  background-color: #467183;
+  background-color: #cbd5e1;
   display: flex;
   gap: 12px;
 }
@@ -130,7 +138,10 @@ input {
   border-radius: 5px;
   border: none;
   flex-grow: 1;
-  background-color: #f0b7a4;
+  background-color: #e5e7eb;
+  border-width: 1px;
+  border-color: #d1d5db;
+  border-style: solid;
   color: #1c2c4c;
   font-size: 1rem;
 }
@@ -146,8 +157,8 @@ input {
   height: 40px;
   padding: 5px 10px;
   border-radius: 5px;
-  color: #242443;
-  border: 1px solid #62a2bd;
-  background-color: #62a2bd;
+  color: #f9fafb;
+  border: 1px solid #94a3b8;
+  background-color: #94a3b8;
   font-weight: 600;
 }

@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Message from "./Message";
 import SendMessage from "./SendMessage";
 import {

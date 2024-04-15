@@ -3,7 +3,6 @@ import ChatBox from "./components/ChatBox";
 import Welcome from "./components/Welcome";
 import { auth } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useState } from "react";
 
 function App() {
   const [user] = useAuthState(auth);
